@@ -250,6 +250,7 @@ int Database::Invite(const char* Uid, const char* Fid, const char* Gid){
 int Database::SaveOfflineMSG(const char* SendID, const char* RecvID, const char* GroupID,
 	   	const char* content, int type,int tag)
 {
+	tag = 1;//这是在测试github
 	char tms[64];
 	getTime(tms);
 	if(tag==0){
